@@ -1,0 +1,144 @@
+
+html, body{
+    min-width: 290px;
+    color:  #4d4e53;
+    font-family: 'Open Sans',Arial, sans-serif;
+    line-height: 1.5;
+  }
+  
+.image{
+    display: flex;
+    justify-content: center;
+}
+body{
+    display: block;
+    margin: 8px;
+}
+  
+nav{
+    display: block;
+}
+  
+#navbar{
+    position: fixed;
+    min-width: 150px;
+    top:0px;
+    left:0px;
+    width: 200px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+}
+  
+  #navbar ul{
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+  #navbar li {
+      color: #4d4e53;
+      border-top: 1px solid;
+      list-style: none;
+      position: relative;
+      width: 100%;
+  }
+  
+  ul {
+      display: block;
+      list-style-type: disc;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding-inline-start: 40px;
+      unicode-bidi: isolate;
+  }
+  
+  #navbar a {
+      display: block;
+      padding: 10px 30px;
+      color: #4d4e53;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  
+  #main-doc{
+    margin-left: 200px;
+    position: absolute;
+    padding: 20px;
+    margin-bottom: 110px;
+  }
+  
+  header{
+    position: relative;
+    color: black;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: thin;
+  }
+  
+  section{
+    display: block;
+    text-align: left;  /* Ensure text aligns left, adjust as needed */
+  }
+  
+  section li {
+      list-style-type: circle;
+      margin: 15px 0px 0px 20px;
+  }
+  
+  li{
+    list-style-type: none;
+    display: list-items;
+    font-family: "Times New Roman", Times, serif;
+  
+  }
+  p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;    
+    color: #4d4e53;
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  
+  @media only screen and (max-width: 400px) {
+      #main-doc {
+          margin-left: -10px;
+          top: 40px;
+      }
+  }
+  
+  @media only screen and (max-width: 500px){
+  
+  
+    #main-doc{
+      margin-top: 350px;
+      position: relative;
+      margin-left: 0;
+    }
+  
+    #navbar{
+      position: absolute;
+      top:0;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-height: 275px;
+      border: none;
+      z-index: 1;
+      background-color: white;
+    }
+  
+   #navbar ul{
+      border: 1px solid;
+      height: 230px;
+    }
+  }
+  
